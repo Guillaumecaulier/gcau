@@ -14,7 +14,7 @@ $Open:'Open Sans', sans-serif;
 $Old:'Old Standard TT', serif;
 
 $black: rgb(55,55,55);
-$white: rgb(245,245,245);
+$white: rgb(249,249,249);
 
 body {
   background-color: $white;
@@ -40,21 +40,17 @@ h5 {
   font-weight: lighter;
 }
 
-ul {
-  list-style: none;
-  margin-left:0;
-  padding-left:0;
-}
-li {
-  padding:0;
-}
-
 header h1, p {
   padding-top: 20px;
 }
 
 footer {
   background-color: rgb(240,240,240);
+}
+
+
+.contact {
+  padding-top: 60px;
 }
 
 .button-black {
@@ -96,12 +92,18 @@ footer {
 
 
 .transitio {
-  background-image: url(https://images.unsplash.com/photo-1434575584937-1731c6d1135c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=46035d2f7f21cf0398a8d9505a426516);
-  background-size: cover;
-  height: 500px;
-  background-position: center center;
-  position: relative;
-  z-index: -3;
+  height:350px;
+  display: flex;
+  background: url(https://images.unsplash.com/photo-1419927501211-807c3271800a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=49db5457b589210cdae506221139ede6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin:0;
+  width:80%;
+      h3 {
+    margin: auto;
+    font-size: 150px;
+    font-weight: bold;
+  }
 }
 
 
