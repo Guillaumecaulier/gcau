@@ -7,6 +7,7 @@
 @import "plugin/animate.css";
 @import "jquery-ui.css";
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Open+Sans);
+@import "contact.css";
 
 
 
@@ -48,9 +49,15 @@ footer {
   background-color: rgb(240,240,240);
 }
 
+a small:hover {
+  text-decoration: underline;
+}
 
 .contact {
-  padding-top: 60px;
+  position: relative;
+  bottom: -60px;
+  padding: 50px 0;
+  border: 1px solid $black;
 }
 
 .button-black {
@@ -98,10 +105,10 @@ footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin:0;
-  width:80%;
+  width:90%;
       h3 {
     margin: auto;
-    font-size: 150px;
+    font-size: 80px;
     font-weight: bold;
   }
 }
@@ -119,7 +126,7 @@ footer {
 .pho{
   position: relative;
   img {
-    box-shadow: -3px 3px 1px rgba(55,55,55,0.1)
+    box-shadow: -2px 2px 1px rgba(55,55,55,0.1)
   }
 }
 .con {
@@ -130,7 +137,7 @@ footer {
   width: 90%;
   background-color: white;
   padding: 15px;
-  box-shadow: 3px 3px 1px rgba(55,55,55,0.1);
+  box-shadow: 2px 2px 1px rgba(55,55,55,0.1);
 }
 
 
