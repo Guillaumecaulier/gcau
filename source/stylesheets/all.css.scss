@@ -10,12 +10,13 @@
 @import "contact.css";
 
 
-
 $Open:'Open Sans', sans-serif;
 $Old:'Old Standard TT', serif;
 
 $black: rgb(55,55,55);
-$white: rgb(249,249,249);
+$white: #F3F3F3;
+
+
 
 body {
   background-color: $white;
@@ -77,6 +78,7 @@ a small:hover {
   background-image: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=4b74433d714284e49de7f8a93fb52d88);
   background-size: cover;
   margin-bottom: 90px;
+  margin-top: 25px;
   display: flex;
   height:90vh;
   background-position: center center;
@@ -101,6 +103,8 @@ a small:hover {
 .transitio {
   height:350px;
   display: flex;
+  left: -300px;
+  position: relative;
   background: url(https://images.unsplash.com/photo-1419927501211-807c3271800a?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=49db5457b589210cdae506221139ede6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
