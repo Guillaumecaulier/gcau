@@ -7,23 +7,26 @@
 @import "jquery-ui.css";
 @import url(https://fonts.googleapis.com/css?family=Old+Standard+TT:400,700|Open+Sans);
 @import "contact.css";
+@import "style.css";
 
 
 $Open:'Open Sans', sans-serif;
 $Old:'Old Standard TT', serif;
 
-$black: rgb(55,55,55);
+$black: rgba(55,55,55,1);
 $white: #F3F3F3;
 
 
 
 body {
-  background-color: $white;
+  background-image: image-url("images/paper.jpg");
   font-family: $Open;
+  color: $black;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $Old;
+  color:$black;
 }
 
 h1 {
@@ -46,7 +49,26 @@ header h1, p {
 }
 
 footer {
-  background-color: rgb(235,235,235);
+  background-color: rgb(55,55,55);
+  a , h5, p {
+    color: #888888;
+    font-size: 12px !important;
+  }
+  .fa {
+    padding: 5px 5px;
+    &:hover {
+      border: none;
+    }
+  }
+  .fa-twitter:hover {
+    color: #2EAEF7;
+  }
+  .fa-linkedin:hover {
+    color: #1A85BC;
+  }
+  .fa-github:hover {
+    color: rgb(55,55,55);
+  }
 }
 
 p {
@@ -76,27 +98,33 @@ img {
 .contact {
   position: relative;
   bottom: -60px;
-  padding: 50px 0;
-  border: 1px solid $black;
+  padding: 30px 0;
+
 }
 
 .button-black {
-  background-color: $black;
-  color: white;
+  display: inline-block;
+  background-color: transparent;
+  color: $black;
   font-size: 16px;
   padding: 5px 20px;
+  border: 1px solid $black;
   border-radius: 2px;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, transparent 50%, rgba(55, 55, 55, 1) 70%);
+  transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 0s, background-color .5s ease;
   &:hover{
-    color: $black;
-    border: 1px solid $black;
-    background-color: $white;
+    color: $white;
+    border: none;
+    background-color:rgba(55, 55, 55, 1);
+    background-position: -100% 100%;
   }
 }
 
 .bg {
-  background-image: url(https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=4b74433d714284e49de7f8a93fb52d88);
+  background-image: image-url("images/banner.jpeg");
   background-size: cover;
-  margin-bottom: 90px;
+
   margin-top: 25px;
   display: flex;
   height:90vh;
@@ -116,8 +144,6 @@ img {
 .content-bg {
   margin: auto;
 }
-
-
 
 .transitio {
   height:350px;
@@ -165,10 +191,10 @@ img {
 
 
 .big-letter {
+    color: $black;
     font-family: $Old;
     font-size: 387px;
     line-height: 440px;
-    color: #191A1C;
     position: absolute;
     text-transform: uppercase;
     pointer-events: none;
@@ -193,7 +219,14 @@ img {
     opacity: 0;
 }
 
-
+.contactme {
+  background: url(https://images.unsplash.com/photo-1431576901776-e539bd916ba2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=47d289aab516853866fd57d2312fd101);
+  background-position: center center;
+  padding: 50px ;
+  h5, h3 {
+    color: white;
+  }
+}
 
 
 // Style title
