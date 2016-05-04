@@ -222,12 +222,34 @@ img {
 .contactme {
   background: url(https://images.unsplash.com/photo-1431576901776-e539bd916ba2?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=47d289aab516853866fd57d2312fd101);
   background-position: center center;
-  padding: 50px ;
+  padding: 70px ;
   h5, h3 {
     color: white;
   }
 }
 
+
+
+
+.lastpro {
+  background-color: #587069;
+
+  margin-bottom: 200px;
+}
+
+.last {
+  display: flex;
+  height: 50vh;
+  background-color: rgba(55,55,55,0.3);
+}
+
+.julien-content {
+  margin: auto;
+  padding: 20px 20px 0px;
+  h3, h4, p , a {
+    color: white;
+  }
+}
 
 // Style title
 
