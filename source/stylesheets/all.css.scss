@@ -24,7 +24,7 @@ body {
   color: $black;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   font-family: $Old;
   color:$black;
 }
@@ -232,7 +232,7 @@ img {
 
 
 .lastpro {
-  background-color: #587069;
+  background-color: $white;
 
   margin-bottom: 200px;
 }
@@ -240,14 +240,14 @@ img {
 .last {
   display: flex;
   height: 50vh;
-  background-color: rgba(55,55,55,0.3);
+
 }
 
 .julien-content {
   margin: auto;
   padding: 20px 20px 0px;
   h3, h4, p , a {
-    color: white;
+    color: $black;
   }
 }
 
